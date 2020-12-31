@@ -17,6 +17,7 @@
 
 import itertools
 from collections import defaultdict
+
 from practice3 import corpus, dictionary
 
 # Save the fifth document: doc

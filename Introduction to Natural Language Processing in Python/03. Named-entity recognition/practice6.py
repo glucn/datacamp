@@ -9,7 +9,9 @@
 # the same person in different ways!
 
 from polyglot.text import Text
+
 from preload import article_es
+
 txt = Text(article_es)
 
 # Initialize the count variable: count

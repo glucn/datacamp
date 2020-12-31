@@ -9,11 +9,15 @@
 # You can use hasattr() to determine if each chunk has a 'label' and then simply use the chunk's .label() method as
 # the dictionary key.
 
-import nltk
 from collections import defaultdict
+
+import nltk
 from matplotlib import pyplot as plt
+
 from practice1 import pos_sentences
+
 chunked_sentences = nltk.ne_chunk_sents(pos_sentences, binary=True)
+
 
 # Create the defaultdict: ner_categories
 ner_categories = defaultdict(int)

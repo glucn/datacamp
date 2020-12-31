@@ -5,9 +5,12 @@
 # You start with the same tokens you created in the last exercise: lower_tokens. You also have the Counter class
 # imported.
 
-from practice1 import lower_tokens
 from collections import Counter
+
 from nltk.corpus import stopwords
+
+from practice1 import lower_tokens
+
 english_stops = stopwords.words('english')
 
 # Import WordNetLemmatizer

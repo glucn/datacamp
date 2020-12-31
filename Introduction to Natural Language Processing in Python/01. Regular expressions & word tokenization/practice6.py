@@ -9,8 +9,10 @@
 # You have access to the entire script in the variable holy_grail. Go for it!
 
 import re
+
 from matplotlib import pyplot as plt
 from nltk.tokenize import regexp_tokenize
+
 from preload import holy_grail
 
 # Split the script into lines: lines

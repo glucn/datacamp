@@ -7,6 +7,7 @@
 # from polyglot.text.
 
 from polyglot.text import Text
+
 from preload import article_fr
 
 # polyglot require some dependencies, please see:

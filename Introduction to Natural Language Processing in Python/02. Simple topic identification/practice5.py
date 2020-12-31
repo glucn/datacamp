@@ -6,6 +6,7 @@
 # TfidfModel has been imported for you from gensim.models.tfidfmodel.
 
 from gensim.models.tfidfmodel import TfidfModel
+
 from practice3 import corpus, dictionary
 from practice4 import doc
 

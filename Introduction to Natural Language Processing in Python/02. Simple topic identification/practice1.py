@@ -7,6 +7,7 @@
 # word_tokenize has been imported for you.
 
 from nltk.tokenize import word_tokenize
+
 from preload import article
 
 # Import Counter

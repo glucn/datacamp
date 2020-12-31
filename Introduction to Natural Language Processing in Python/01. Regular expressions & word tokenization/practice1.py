@@ -13,6 +13,7 @@
 # Remember from the video that the syntax for the regex library is to always to pass the pattern first, and then the
 # string second.
 import re
+
 from preload import my_string
 
 # Write a pattern to match sentence endings: sentence_endings

@@ -8,6 +8,7 @@
 
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
+
 from preload import article
 
 # nltk.download('averaged_perceptron_tagger')

@@ -6,8 +6,8 @@
 # Does the score change along with the alpha? What is the best alpha?
 
 import numpy as np
-from sklearn.naive_bayes import MultinomialNB
 from sklearn import metrics
+from sklearn.naive_bayes import MultinomialNB
 
 from practice1 import y_train, y_test
 from practice2 import tfidf_train, tfidf_test
