@@ -8,3 +8,4 @@ Personal notes and resources for datacamp courses.
 
 - Machine Learning
   - [Supervised Learning with scikit-learn](/Supervised_Learning_with_scikit-learn)
+  - [Unsupervised Learning in Python](/Unsupervised_Learning_in_Python)
