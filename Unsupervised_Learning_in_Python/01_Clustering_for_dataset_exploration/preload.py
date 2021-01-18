@@ -603,11 +603,11 @@ new_points = np.array([[0.40023333, -1.26544471],
                        [0.55559999, 1.18765072],
                        [0.02813444, -0.69911131]])
 
-seeds = pd.read_csv('seeds_dataset.txt', delim_whitespace=True, header=None)
+seeds = pd.read_csv('../data/seeds_dataset.txt', delim_whitespace=True, header=None)
 seeds_samples = seeds.iloc[:, :-1]
 seeds_varieties = seeds.iloc[:, -1].replace({1: 'Kama wheat', 2: 'Rosa wheat', 3: 'Canadian wheat'}).tolist()
 
-fish_catch = pd.read_csv('fishcatch.dat.txt', delim_whitespace=True, header=None).iloc[:, :-1].dropna()
+fish_catch = pd.read_csv('../data/fishcatch.dat.txt', delim_whitespace=True, header=None).iloc[:, :-1].dropna()
 fish_catch_samples = fish_catch.iloc[:, 2:]
 fish_catch_species = fish_catch.iloc[:, 1].replace(
     {
@@ -621,64 +621,6 @@ fish_catch_species = fish_catch.iloc[:, 1].replace(
     }
 ).tolist()
 
-stock_movements = np.genfromtxt('movements.csv', delimiter=',')
-stock_companies = np.array(['Apple',
-                            'AIG',
-                            'Amazon',
-                            'American express',
-                            'Boeing',
-                            'Bank of America',
-                            'British American Tobacco',
-                            'Canon',
-                            'Caterpillar',
-                            'Colgate-Palmolive',
-                            'ConocoPhillips',
-                            'Cisco',
-                            'Chevron',
-                            'DuPont de Nemours',
-                            'Dell',
-                            'Ford',
-                            'General Electrics',
-                            'Google/Alphabet',
-                            'Goldman Sachs',
-                            'GlaxoSmithKline',
-                            'Home Depot',
-                            'Honda',
-                            'HP',
-                            'IBM',
-                            'Intel',
-                            'Johnson & Johnson',
-                            'JPMorgan Chase',
-                            'Kimberly-Clark',
-                            'Coca Cola',
-                            'Lookheed Martin',
-                            'MasterCard',
-                            'McDonalds',
-                            '3M',
-                            'Microsoft',
-                            'Mitsubishi',
-                            'Navistar',
-                            'Northrop Grumman',
-                            'Novartis',
-                            'Pepsi',
-                            'Pfizer',
-                            'Procter Gamble',
-                            'Philip Morris',
-                            'Royal Dutch Shell',
-                            'SAP',
-                            'Schlumberger',
-                            'Sony',
-                            'Sanofi-Aventis',
-                            'Symantec',
-                            'Toyota',
-                            'Total',
-                            'Taiwan Semiconductor Manufacturing',
-                            'Texas instruments',
-                            'Unilever',
-                            'Valero Energy',
-                            'Walgreen',
-                            'Wells Fargo',
-                            'Wal-Mart',
-                            'Exxon',
-                            'Xerox',
-                            'Yahoo'])
+stock = pd.read_csv('../data/stock_movements.csv', header=None)
+stock_movements = stock.iloc[:, 1:].to_numpy()
+stock_companies = stock.iloc[:, 0].to_list()
